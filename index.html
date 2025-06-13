@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaraKape</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <div class="logo">Tara<span>Kape</span></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#coffee">Coffee</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <h1>Welcome to TaraKape</h1>
+      <p>Freshly brewed coffee, made just for you.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <p>
+          TaraKape was founded by five passionate coffee lovers who turned their
+          shared dream into reality — creating a local brand that celebrates
+          Filipino beans, culture, and community.
+        </p>
+      </div>
+
+      <div class="team-container">
+        <!-- Person 1 -->
+        <div class="team-member">
+          <img src="images/owner1.jpg" alt="Owner 1" />
+          <h3>Francis Gungon</h3>
+          <p><strong>Chief Executive Officer</strong></p>
+          <p>
+            Leads the team and oversees all operations, partnerships, and growth
+            strategies.
+          </p>
+        </div>
+
+        <!-- Person 2 -->
+        <div class="team-member">
+          <img src="images/owner2.jpg" alt="Owner 2" />
+          <h3>Nathaniel Lurot</h3>
+          <p><strong>Head Barista & Product Manager</strong></p>
+          <p>
+            Curates the coffee menu, sources beans, and maintains quality across
+            all products.
+          </p>
+        </div>
+
+        <!-- Person 3 -->
+        <div class="team-member">
+          <img src="images/owner3.jpg" alt="Owner 3" />
+          <h3>Willard Dubria</h3>
+          <p><strong>Marketing & Branding Lead</strong></p>
+          <p>
+            Handles branding, social media presence, and customer engagement.
+          </p>
+        </div>
+
+        <!-- Person 4 -->
+        <div class="team-member">
+          <img src="images/owner4.jpg" alt="Owner 4" />
+          <h3>Charles Justine Martinez</h3>
+          <p><strong>Finance & Inventory Manager</strong></p>
+          <p>
+            Oversees finances, cost control, and inventory for smooth daily
+            operations.
+          </p>
+        </div>
+
+        <!-- Person 5 -->
+        <div class="team-member">
+          <img src="images/owner5.jpg" alt="Owner 5" />
+          <h3>Jefferson Amboboyog</h3>
+          <p><strong>Technology & Delivery Coordinator</strong></p>
+          <p>
+            Manages the online ordering system and ensures timely delivery of
+            all orders.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coffee Menu -->
+    <section class="menu" id="coffee">
+      <h2>Our Coffee</h2>
+      <div class="coffee-container">
+        <!-- Coffee 1 -->
+        <div class="coffee-card">
+          <img src="images/americano.jpg" alt="Americano" />
+          <h3>Americano</h3>
+          <p>₱120.00</p>
+        </div>
+
+        <!-- Coffee 2 -->
+        <div class="coffee-card">
+          <img src="images/espresso.jpg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>₱110.00</p>
+        </div>
+
+        <!-- Coffee 3 -->
+        <div class="coffee-card">
+          <img src="images/cappuccino.jpg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>₱150.00</p>
+        </div>
+
+        <!-- Coffee 4 -->
+        <div class="coffee-card">
+          <img src="images/latte.jpg" alt="Latte" />
+          <h3>Latte</h3>
+          <p>₱140.00</p>
+        </div>
+
+        <!-- Coffee 5 -->
+        <div class="coffee-card">
+          <img src="images/mocha.jpg" alt="Mocha" />
+          <h3>Mocha</h3>
+          <p>₱155.00</p>
+        </div>
+
+        <!-- Coffee 6 -->
+        <div class="coffee-card">
+          <img src="images/macchiato.jpg" alt="Macchiato" />
+          <h3>Macchiato</h3>
+          <p>₱160.00</p>
+        </div>
+
+        <!-- Coffee 7 -->
+        <div class="coffee-card">
+          <img src="images/flatwhite.png" alt="Flatwhite" />
+          <h3>Flatwhite</h3>
+          <p>₱160.00</p>
+        </div>
+
+        <!-- Coffee 8 -->
+        <div class="coffee-card">
+          <img src="images/chocofrappe.jpg" alt="Choco Frappe" />
+          <h3>Choco Frappe</h3>
+          <p>₱160.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order" id="order">
+      <h2>Order Now</h2>
+      <form id="orderForm" action="order.php" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input
+          type="text"
+          name="coffee"
+          placeholder="Coffee Name (e.g. Latte)"
+          required
+        />
+        <input
+          type="number"
+          name="quantity"
+          placeholder="Quantity"
+          min="1"
+          required
+        />
+        <input
+          type="text"
+          name="address"
+          placeholder="Delivery Address"
+          required
+        />
+        <button type="submit" id="submitBtn">Place Order</button>
+      </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-details">
+        <p><strong>Email:</strong> tarakape.ph@gmail.com</p>
+        <p><strong>Phone:</strong> 09876543211</p>
+        <p>
+          <strong>Location:</strong> EARIST, Sampaloc, Manila City, Philippines
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+      <p>Contact us: tarakape.ph | Landline: 699690</p>
+      <p>&copy; 2025 TaraKape. All rights reserved.</p>
+    </footer>
+    <script>
+      const form = document.getElementById("orderForm");
+      const button = document.getElementById("submitBtn");
+
+      form.addEventListener("submit", (e) => {
+        const confirmOrder = confirm(
+          "Are you sure you want to place this order?"
+        );
+        if (!confirmOrder) {
+          e.preventDefault(); // stop form submission
+          return;
+        }
+        button.innerText = "Placing Order...";
+        button.disabled = true;
+      });
+    </script>
+  </body>
+</html>
